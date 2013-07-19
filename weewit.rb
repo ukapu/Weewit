@@ -6,4 +6,8 @@ get '/' do
   "Welcome to Weewit!"
 end
 
+post '/fit' do
+  fithash = scraper(params[:url])
+   
+  
 
